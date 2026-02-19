@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="fr-BE">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bilingual Talent Access & Retention Risk Intelligence™ - Protection stratégique de vos talents bilingues en Belgique">
+    <title>Bilingual Talent Access & Retention Risk Intelligence™ | Homieux Media</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="https://homieuxmedia.com" target="_blank" rel="noopener noreferrer" class="logo-link" aria-label="Homieux Media - Retour au site principal">
+                <img src="logo-homieux.png" alt="Homieux Media Logo" class="logo">
+            </a>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <span class="tag">Intelligence RH Stratégique</span>
+                    <h1>Bilingual Talent Access &<br>Retention Risk Intelligence™</h1>
+                    <p class="subtitle">Anticipez les risques de départ de vos talents bilingues. Sécurisez votre compétitivité juridique et comptable en Belgique.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="assessment" id="assessment">
+            <div class="container">
+                <div class="progress-bar" id="progressBar">
+                    <div class="progress-fill" id="progressFill"></div>
+                </div>
+                
+                <form id="talentForm" class="assessment-form" novalidate>
+                    <!-- Step 1: Firm Size -->
+                    <div class="step active" data-step="1">
+                        <div class="step-header">
+                            <span class="step-number">01</span>
+                            <h2>Taille de votre cabinet</h2>
+                            <p class="step-description">Le nombre de professionnels influence votre exposition au risque de turnover.</p>
+                        </div>
+                        <div class="options-grid">
+                            <label class="option-card">
+                                <input type="radio" name="firmSize" value="small" required>
+                                <span class="option-content">
+                                    <span class="option-title">50–100 professionnels</span>
+                                    <span class="option-detail">Structure agile, dépendance critique aux profils clés</span>
+                                </span>
+                            </label>
+                            <label class="option-card">
+                                <input type="radio" name="firmSize" value="medium" required>
+                                <span class="option-content">
+                                    <span class="option-title">100–150 professionnels</span>
+                                    <span class="option-detail">Phase de consolidation, pression sur la rétention</span>
+                                </span>
+                            </label>
+                            <label class="option-card">
+                                <input type="radio" name="firmSize" value="large" required>
+                                <span class="option-content">
+                                    <span class="option-title">150–250 professionnels</span>
+                                    <span class="option-detail">Organisation mature, optimisation stratégique requise</span>
+                                </span>
+                            </label>
+                        </div>
+                        <div class="step-actions">
+                            <button type="button" class="btn btn-primary" id="nextBtn1" disabled>Continuer</button>
+                        </div>
+                    </div>
+
+                    <!-- Step 2: Bilingual Exposure -->
+                    <div class="step" data-step="2">
+                        <div class="step-header">
+                            <span class="step-number">02</span>
+                            <h2>Exposition clientèle bilingue</h2>
+                            <p class="step-description">Votre dépendance aux compétences FR/NL ou EN détermine votre vulnérabilité.</p>
+                        </div>
+                        <div class="options-grid">
+                            <label class="option-card">
+                                <input type="radio" name="bilingualExposure" value="low" required>
+                                <span class="option-content">
+                                    <span class="option-title">Moins de 25%</span>
+                                    <span class="option-detail">Clientèle principalement unilingue, risque modéré</span>
+                                </span>
+                            </label>
+                            <label class="option-card">
+                                <input type="radio" name="bilingualExposure" value="medium" required>
+                                <span class="option-content">
+                                    <span class="option-title">25% à 50%</span>
+                                    <span class="option-detail">Segment bilingue significatif, vigilance requise</span>
+                                </span>
+                            </label>
+                            <label class="option-card">
+                                <input type="radio" name="bilingualExposure" value="high" required>
+                                <span class="option-content">
+                                    <span class="option-title">Plus de 50%</span>
+                                    <span class="option-detail">Dépendance critique, priorité stratégique absolue</span>
+                                </span>
+                            </label>
+                        </div>
+                        <div class="step-actions">
+                            <button type="button" class="btn btn-secondary" id="prevBtn2">Retour</button>
+                            <button type="button" class="btn btn-primary" id="nextBtn2" disabled>Continuer</button>
+                        </div>
+                    </div>
+
+                    <!-- Step 3: Region -->
+                    <div class="step" data-step="3">
+                        <div class="step-header">
+                            <span class="step-number">03</span>
+                            <h2>Région d'implantation principale</h2>
+                            <p class="step-description">La tension du marché varie significativement selon les bassins d'emploi.</p>
+                        </div>
+                        <div class="options-grid">
+                            <label class="option-card">
+                                <input type="radio" name="region" value="brussels" required>
+                                <span class="option-content">
+                                    <span class="option-title">Bruxelles</span>
+                                    <span class="option-detail">Marché hyper-concurrentiel, pression salariale maximale</span>
+                                </span>
+                            </label>
+                            <label class="option-card">
+                                <input type="radio" name="region" value="antwerp" required>
+                                <span class="option-content">
+                                    <span class="option-title">Anvers / Flandre</span>
+                                    <span class="option-detail">Forte demande profils bilingues, tension élevée</span>
+                                </span>
+                            </label>
+                            <label class="option-card">
+                                <input type="radio" name="region" value="liege" required>
+                                <span class="option-content">
+                                    <span class="option-title">Liège / Wallonie</span>
+                                    <span class="option-detail">Marché en transition, opportunités de positionnement</span>
+                                </span>
+                            </label>
+                            <label class="option-card">
+                                <input type="radio" name="region" value="other" required>
+                                <span class="option-content">
+                                    <span class="option-title">Autre région belge</span>
+                                    <span class="option-detail">Dynamique locale spécifique à évaluer</span>
+                                </span>
+                            </label>
+                        </div>
+                        <div class="step-actions">
+                            <button type="button" class="btn btn-secondary" id="prevBtn3">Retour</button>
+                            <button type="button" class="btn btn-primary" id="nextBtn3" disabled>Continuer</button>
+                        </div>
+                    </div>
+
+                    <!-- Step 4: Hiring Pressure -->
+                    <div class="step" data-step="4">
+                        <div class="step-header">
+                            <span class="step-number">04</span>
+                            <h2>Pression de recrutement actuelle</h2>
+                            <p class="step-description">Votre posture d'embauche influence votre risque de déstabilisation.</p>
+                        </div>
+                        <div class="options-grid">
+                            <label class="option-card">
+                                <input type="radio" name="hiringPressure" value="stable" required>
+                                <span class="option-content">
+                                    <span class="option-title">Stable</span>
+                                    <span class="option-detail">Remplacement uniquement, pas de croissance active</span>
+                                </span>
+                            </label>
+                            <label class="option-card">
+                                <input type="radio" name="hiringPressure" value="moderate" required>
+                                <span class="option-content">
+                                    <span class="option-title">Recrutement modéré</span>
+                                    <span class="option-detail">Croissance organique, quelques postes stratégiques</span>
+                                </span>
+                            </label>
+                            <label class="option-card">
+                                <input type="radio" name="hiringPressure" value="aggressive" required>
+                                <span class="option-content">
+                                    <span class="option-title">Recrutement agressif</span>
+                                    <span class="option-detail">Expansion majeure, compétition intense sur le marché</span>
+                                </span>
+                            </label>
+                        </div>
+                        <div class="step-actions">
+                            <button type="button" class="btn btn-secondary" id="prevBtn4">Retour</button>
+                            <button type="button" class="btn btn-primary" id="nextBtn4" disabled>Analyser mon risque</button>
+                        </div>
+                    </div>
+
+                    <!-- Step 5: Results -->
+                    <div class="step" data-step="5">
+                        <div class="results-container" id="resultsContainer">
+                            <div class="results-header">
+                                <span class="tag">Analyse complétée</span>
+                                <h2>Votre diagnostic rétention & accès talent</h2>
+                                <p class="disclaimer">Cette évaluation repose sur la modélisation de signaux publics du marché du travail et des hypothèses stratégiques.</p>
+                            </div>
+
+                            <div class="risk-dashboard">
+                                <div class="risk-main">
+                                    <div class="risk-level" id="riskLevel">
+                                        <span class="risk-label">Niveau de risque</span>
+                                        <span class="risk-value" id="riskValue">--</span>
+                                        <span class="risk-description" id="riskDescription">--</span>
+                                    </div>
+                                </div>
+
+                                <div class="indicators-grid">
+                                    <div class="indicator-card">
+                                        <span class="indicator-label">Pression prime bilingue</span>
+                                        <div class="indicator-bar">
+                                            <div class="indicator-fill" id="bilingualPressureBar"></div>
+                                        </div>
+                                        <span class="indicator-value" id="bilingualPressureValue">--</span>
+                                    </div>
+                                    <div class="indicator-card">
+                                        <span class="indicator-label">Exposition pénurie talent</span>
+                                        <div class="indicator-bar">
+                                            <div class="indicator-fill" id="scarcityBar"></div>
+                                        </div>
+                                        <span class="indicator-value" id="scarcityValue">--</span>
+                                    </div>
+                                    <div class="indicator-card">
+                                        <span class="indicator-label">Leviers augmentation IA</span>
+                                        <div class="indicator-bar">
+                                            <div class="indicator-fill" id="aiLeverageBar"></div>
+                                        </div>
+                                        <span class="indicator-value" id="aiLeverageValue">--</span>
+                                    </div>
+                                    <div class="indicator-card">
+                                        <span class="indicator-label">Faisabilité EOR</span>
+                                        <div class="indicator-bar">
+                                            <div class="indicator-fill" id="eorFeasibilityBar"></div>
+                                        </div>
+                                        <span class="indicator-value" id="eorFeasibilityValue">--</span>
+                                    </div>
+                                </div>
+
+                                <div class="strategic-interpretation">
+                                    <h3>Interprétation stratégique</h3>
+                                    <div class="interpretation-content" id="interpretationContent">
+                                        <!-- Dynamically populated -->
+                                    </div>
+                                </div>
+
+                                <div class="heatmap-section">
+                                    <h3>Heatmap du marché talent bilingue</h3>
+                                    <p class="heatmap-note">Modélisation basée sur les signaux publics de recrutement et la vélocité LinkedIn (2024-2025).</p>
+                                    <div class="heatmap" id="marketHeatmap">
+                                        <!-- Dynamically populated -->
+                                    </div>
+                                </div>
+
+                                <div class="cta-section">
+                                    <div class="cta-content">
+                                        <h3>Discutons de votre stratégie de protection</h3>
+                                        <p>Un diagnostic personnalisé de 15 minutes pour sécuriser vos talents critiques.</p>
+                                        <a href="https://cal.com/homieux-media/discovery-call-gratuit-discutons-de-vos-defis" target="_blank" rel="noopener noreferrer" class="btn btn-cta">
+                                            Réserver mon appel découverte gratuit
+                                            <span class="btn-note">15 minutes • Sans engagement</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="footer-logo">Homieux Media</span>
+                    <p class="footer-tagline">Intelligence stratégique RH pour les cabinets belges</p>
+                </div>
+                <div class="footer-links">
+                    <a href="https://www.homieuxmedia.com/politique-de-confidentialite" target="_blank" rel="noopener noreferrer">Politique de confidentialité</a>
+                    <a href="https://www.homieuxmedia.com/conditions-dutilisation" target="_blank" rel="noopener noreferrer">Conditions d'utilisation</a>
+                </div>
+                <div class="footer-legal">
+                    <p>&copy; 2026 Homieux Media. Tous droits réservés.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
